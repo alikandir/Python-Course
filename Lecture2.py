@@ -101,13 +101,13 @@
 #        print(i)
 
 ### örnek girilen sayının asal sayılığını kontrol et:
-check = 0
+
 sayi = int(input("Sayı giriniz: "))
-for i in range (2, sayi):
+for i in range (2, int(sayi**0.5)+1):
     if sayi%i==0:
-       print("asal değildir")
+       print("Asal değildir")
        break
     else:
-        print("asaldır")
-        break
+       print("Asaldır")
+       break
 
