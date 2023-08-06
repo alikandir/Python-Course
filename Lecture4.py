@@ -93,7 +93,7 @@
 # print(şehir[0][2])
 
 
-import random  ###rastgele sayı için random kütüphanesi kullanma
+# import random  ###rastgele sayı için random kütüphanesi kullanma
 # liste=[]
 # for i in range(100):
 #     liste.append(random.randint(1,100))
