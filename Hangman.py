@@ -4,6 +4,7 @@ import random
 
 kelimeler=['elma', 'kalem', 'kitap', 'bilgisayar', 'masa', 'sandalye', 'ev', 'telefon', 'okul', 'araba',
              'ananas', 'karpuz', 'çanta', 'kilometre', 'yazılım', 'televizyon', 'heyecan', 'futbol', 'istanbul', 'çikolata']
+
 print("Adam asmaca oyununa hoş geldin!")
 time.sleep(1)
 print("Uyarı: Lütfen her şeyi küçük harflerle yazın")

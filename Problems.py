@@ -31,8 +31,8 @@
 #         pozitif+=1
 # print(f"Pozitif sayı miktarı: {pozitif}, Negatif sayı miktarı: {negatif}")
 
-### Polindrom check
-#Kelimeyi al.
+## Polindrom check
+# Kelimeyi al.
 # kelime=input("Polindrom durumunu kontrol etmek için kelime giriniz: ")
 # kelime_ters=[]
 # kelime_düz=[]
@@ -40,7 +40,7 @@
 # for harf in kelime:
 #     kelime_düz.insert(i,harf)
 #     i+=1
-# Tersine çevir.
+# # Tersine çevir.
 
 # for harf in kelime:
     
