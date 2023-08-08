@@ -1,11 +1,7 @@
 ### Sıra no, ürün adı, adet, fiyat
 ### menü 1--- ürün ekle, 2--- ürün sil, 3---ürün listele, 4---ara,5---çıkış
 
-
-def listele():
-    pass
-    
-
+ 
 ### menü
 
 sira=[]
@@ -17,7 +13,7 @@ toplam2=0
 
 def urunEkle():
     global siraNo
-    urun.append(input("Ürün adın girin: "))
+    urun.append(input("Ürün adını girin: "))
     adet.append(int(input("Ürün adedi girin: ")))
     fiyat.append(int(input("Ürün fiyatı girin: ")))
     sira.append(siraNo)
