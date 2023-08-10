@@ -104,7 +104,7 @@
 
 
 #### çocuk sayısı beyaz ya da mavi yaka olma durumuna göre maaş hesaplama programı.
-def maas():
+def maasBul():
     maas=0
     if beyaz_mavi==1:
         maas+=4000
@@ -116,9 +116,7 @@ def maas():
 
     if yuksek==1:
         maas+=300
-    elif yuksek==2:
-        maas=maas
-
+    
     return maas
     
     
@@ -130,6 +128,7 @@ while i<calısan_sayisi:
     tecrube=int(input("Lütfen çalışanın şirkette kaç yıl çalıştığını girin: "))
     yuksek=int(input("1-Yüksek lisans var\n2-Yüksek lisans yok\n"))
     i+=1
-    maas1=maas()
-    print(maas1)
+    maas=maasBul()
+    print(maas)
+    
 
