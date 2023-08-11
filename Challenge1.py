@@ -28,7 +28,7 @@ def urunSil():
     urun.pop(silinecek)
 
 def urunListele():
-    for i in sira:
+    for i in range(len(sira)):
         print(f"Sıra numarası: {sira[i]}, Ürün adı: {urun[i]}, Ürün Adedi: {adet[i]}, Ürün Fiyatı: {fiyat[i]} ")
 
 def arama():
@@ -37,7 +37,7 @@ def arama():
 
 def cariToplam():
     global toplam2
-    for i in sira:
+    for i in range(len(sira)):
         toplam=(adet[i]*fiyat[i])
         toplam2=toplam2+toplam
       
@@ -53,6 +53,7 @@ while secenek !=6:
     elif secenek==2:
         urunSil()
         sayac-=1
+        siraNo-=1
     elif secenek==3:
         urunListele()
     elif secenek==4:
@@ -60,4 +61,6 @@ while secenek !=6:
     elif secenek==5:
         cariToplam()
         print(toplam2)
+
+print("Görüşürüz")
 

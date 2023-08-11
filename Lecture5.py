@@ -131,26 +131,26 @@
 # topla(2.2,3.7)
 # topla(1,80,65,15,100)
 
-def topla(x,y):
-    print(x+y)
-def çarpim(x,y):
-    print(x*y)
-def çikarma(x,y):
-    print(x-y)
-def bolme(x,y):
-    print(x/y)
+# def topla(x,y):
+#     print(x+y)
+# def çarpim(x,y):
+#     print(x*y)
+# def çikarma(x,y):
+#     print(x-y)
+# def bolme(x,y):
+#     print(x/y)
 
-sayi1=int(input("Sayı biri girin: "))
-sayi2=int(input("Sayı ikiyi girin: "))
+# sayi1=int(input("Sayı biri girin: "))
+# sayi2=int(input("Sayı ikiyi girin: "))
 
-islem=input("Ne yapmak istersiniz (topla,çıkar,çarp,böl): ").upper()
+# islem=input("Ne yapmak istersiniz (topla,çıkar,çarp,böl): ").upper()
 
-if islem=="TOPLA":
-    topla(sayi1,sayi2)
-elif islem=="ÇIKAR":
-    çikarma(sayi1,sayi2)
-elif islem == "ÇARP":
-    çarpim(sayi1,sayi2)
-elif islem=="BÖL":
-    bolme(sayi1,sayi2)
+# if islem=="TOPLA":
+#     topla(sayi1,sayi2)
+# elif islem=="ÇIKAR":
+#     çikarma(sayi1,sayi2)
+# elif islem == "ÇARP":
+#     çarpim(sayi1,sayi2)
+# elif islem=="BÖL":
+#     bolme(sayi1,sayi2)
 

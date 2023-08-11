@@ -48,7 +48,7 @@
 ### dosya okuma
 # dosya=open("D:\\Deneme1\\not.txt","rt")
 # print(dosya.read())
-# input("bekle: ")
+
 
 ## satır satır okuma:
 # print(dosya.readline())
