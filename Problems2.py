@@ -2,15 +2,12 @@
 # Bir palindrom kelime veya cümle, tersten okunduğunda da aynı olan kelimeler veya cümlelerdir. 
 #Bir palindrom kontrolü fonksiyonu yazarak, kullanıcının girdiği metnin palindrom olup olmadığını belirleyen bir program yazınız.
 # def Palindrom(kelime):
-#     palindrom=True
-#     for harf in range(len(kelime)//2+1):
+#     for harf in range(len(kelime)//2):
 #         if kelime[harf]!=kelime[(-harf-1)]:
-#             palindrom=False
+#             print("Palindrom değildir.")
 #             break
-#     if palindrom==True:
-#         print("Palindromdur.")
 #     else:
-#         print("Palindrom değildir.")
+#         print("Palindromdur.")
 # Palindrom(input("Lütfen palindromluğu kontrol edilecek kelimeyi giriniz: "))
 
 
@@ -108,4 +105,37 @@
 
 ###  Object Oriented Soruları:
 ### Soru 1: Sınıf Oluşturma - Hayvan Sınıfı
-#Bir "Hayvan" sınıfı oluşturun. Bu sınıfın özellikleri olarak ad, yaş ve tür olsun. Bu sınıfa ait bir nesne oluşturup özelliklerini görüntüleyen bir program yazın.
+#Bir "Hayvan" sınıfı oluşturun. 
+#Bu sınıfın özellikleri olarak ad, yaş ve tür olsun. Bu sınıfa ait bir nesne oluşturup özelliklerini
+#görüntüleyen bir program yazın.
+
+# class Hayvan():
+#     ad=" "
+#     yas=" "
+#     tur=" "
+# def HayvanOlustur(ad,tur,yas):
+#     yeni_hayvan=Hayvan()
+#     yeni_hayvan.ad=ad
+#     yeni_hayvan.tur=tur
+#     yeni_hayvan.yas=yas
+#     return yeni_hayvan
+
+# hayvanlar=[]  ### Objeler liste içine kayıt edilebilir.
+# secim=1
+# while secim==1 or 2:
+#     if secim==1:
+#         # nesne=input("Oluşturulacak hayvan nesnesinin adı: ")
+#         adi=input("Hayvanın adını girin: ")
+#         turu=input("Hayvanın türünü girin: ")
+#         yas=int(input("Hayvanın yaşını girin: "))
+#         yeni_hayvan=HayvanOlustur(adi,turu,yas)
+#         hayvanlar.append(yeni_hayvan)
+#         secim=int(input("1-Hayvan ekle\n2-Hayvanları gör\n3-Çıkış\n"))
+#     elif secim==2:
+#         for hayvan in hayvanlar:
+#             print("Adı:", hayvan.ad)
+#             print("Türü:", hayvan.tur)
+#             print("Yaşı:", hayvan.yas)
+#             print("-" * 20)
+#         secim=int(input("1-Hayvan ekle\n2-Hayvanları gör\n3-Çıkış\n"))
+
