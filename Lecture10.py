@@ -151,34 +151,51 @@
 #     print(tasit.Yakit())
 
 
+#### Örnek Memur ve Öğrenci Kişileri, Öğrencinin yetkileri kısıtlı: 
 
-class Kisi():
-    def __init__(self):
-        self.isim=""
-        self.id=""
-    yetki=1
+# class Kisi():
+#     def __init__(self,isim,kisiID,yetki):
+#         self.isim=isim
+#         self.kisiID=kisiID
+#         self.yetki=yetki
+        
+#     def BilgiVer(self):
+#         print(f"{self.isim} isimli kişinin ID: {self.kisiID}, yetki: {self.yetki}")
 
-class Memur(Kisi):
-    def __init__(self,departman):
-        self.departman=departman
-        super().__init__(self)
-        self.yetki=2
-    def GetterOrtalama(self):
-        if self.yetki==2:
-            pass
+# class Ogrenci(Kisi):
+#     def __init__(self,isim,kisiID,yetki,vize,final):
+#         super().__init__(isim,kisiID,yetki)
+#         self.__vize=vize
+#         self.__final=final
+#         self.__ortalama=self.OrtalamaHesapla()
     
-
+#     def OrtalamaHesapla(self):
+#         return (self.__vize+self.__final)/2
     
-class Ogrenci(Kisi):
-    def __init__(self,vize,final):
-        self.__vize=vize
-        self.__final=final
-        self.__ort=(vize+final)/2
-        super().__init__(self)
-    def OrtHesapla(self,vize,final):
-        return (vize+final)/2
-    def SetterVizeFinal(self):
-        pass
-            
-    def GetterOrtalama():
-        pass
+#     def GetterVizeFinal(self):
+#         print(f"Öğrenci vize notu: {self.__vize}, final notu: {self.__final}")
+    
+#     def SetterVizeFinal(self,vize,final):
+#         self.__vize=vize
+#         self.__final=final
+#         self.__ortalama=self.OrtalamaHesapla()
+
+#     def GetterOrtalama(self,yetki=1):
+#         if yetki==2:
+#             print(f"Ortalama: {self.__ortalama}")
+#         else:
+#             print("Yetkiniz yok")      
+# class Memur(Kisi):
+#     def __init__(self, isim, kisiID, yetki,departman):
+#         super().__init__(isim, kisiID, yetki)
+#         self.departman=departman
+    
+#     def GetterOrtalama(self,ogrenci,yetki):
+#         ogrenci.GetterOrtalama(yetki)
+# ogrenci1=Ogrenci("Ali Kandır",12345,1,50,70)
+# ogrenci1.GetterOrtalama(ogrenci1.yetki)
+# ogrenci1.SetterVizeFinal(70,100)
+# ogrenci1.GetterOrtalama(ogrenci1.yetki)
+
+# memur1=Memur("Ahmet Mehmet",456,2,"Bilgisayar Mühendisliği")
+# memur1.GetterOrtalama(ogrenci1,memur1.yetki)
